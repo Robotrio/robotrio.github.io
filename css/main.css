@@ -63,11 +63,10 @@ nav a {
 }
 nav hr {margin-bottom:2em;margin-top:0;}
 #headerimg {
-	background: lightblue url(../images/S1_Poster.webp) no-repeat 50% 20%;
+	background: url(../images/S1_Poster.webp) lightblue no-repeat 50% 20%;
 	background-size: cover;
 	height:33vw;
 	margin:0 auto 2em auto;
-	
 	width:80%;
 }
 #headerimg img {
