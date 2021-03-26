@@ -1,0 +1,213 @@
+/* ------------------------------ BASIS ------------------------------ */
+* {box-sizing:border-box;}
+html {
+	margin: 0;
+	padding: 0;
+	min-height:100%;
+}
+body {
+	background:linear-gradient(#008484,#AFF);
+	color:white;
+	display:flex;
+	flex-direction:column;
+	min-height:100vh;
+	font-family:arial;
+	margin:0;
+	padding:0;
+}
+footer {
+	background:#008484;
+	margin:0;
+	margin-top:auto;
+	padding: 2em;
+	width:100%;
+}
+/* ------------------------------ HEADER ------------------------------ */
+nav {
+	margin:auto;
+	width:70%;
+}
+nav ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	text-align:center;
+}
+nav li {
+	display:inline-block;
+	width:16.667%;
+}
+#headerlogo {
+	display:auto;
+	height:3em;
+	margin:0;
+	padding:0;
+	position:relative;
+	top:.5em;
+	width:auto;
+}
+#headerlogom {display:none;}
+nav li h1, nav li h1 a {
+	margin:0;
+	padding:0;
+}
+nav a {
+	color:white;
+	display:inline-block;
+	font-family:arial;
+	text-decoration:none;
+	padding:.5em 0 .5em 0;
+	height:100%;
+	width:100%;
+}
+nav hr {margin-bottom:2em;margin-top:0;}
+#headerimg {
+	background: lightblue url(../images/S1_Poster.webp) no-repeat 50% 20%;
+	background-size: cover;
+	height:33vw;
+	margin:0 auto 2em auto;
+	
+	width:80%;
+}
+#headerimg img {
+	height:100%;
+	width:100%;
+}
+/* ------------------------------ NEWS, MORE ------------------------------ */
+hr {
+	border:1px solid white;
+	margin-bottom:1em;
+	width:100%;
+}
+main {
+	margin:auto auto 2em auto;
+	width:80%;
+}
+.bg {
+	/*
+	background:#006262;
+	*/
+	background:#008484;
+	margin:2em 0;
+	padding:1em 2.5em;
+}
+p {
+	line-height:1.25em;
+}
+#blog {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:space-between;
+	background:white;
+	padding: 0 1em;
+}
+.newsbox {
+	background:teal;
+	height:25vw;
+	margin:1em 0;
+	position:relative;
+	width:25vw;
+}
+.newsbox a {
+	color:white;
+	text-decoration:none;
+}
+.newstitle {
+	background:#000;
+	background:#000B;
+	bottom:0;
+	padding:1em;
+	pointer-events:none;
+	position:absolute;
+	width:100%;
+}
+.newstitle a {
+	display:block;
+	height:100%;
+	width:100%;
+}
+.newsbox img, .divlink {
+	display:block;
+	height:100%;
+	width:100%;
+}
+iframe {
+	border:0;
+	display:block;
+	margin:2em auto;
+	width:56vw;
+	height:31.5vw;
+}
+#audioLink {
+	margin:0 auto .5em auto;
+	text-align:center;
+}
+.referencelink {
+	text-decoration:none;
+}
+/* ------------------------------ MISCELLANEOUS ------------------------------ */
+a {color:white;}
+button {
+	background:#055;
+	border:none;
+	border-radius:.75em;
+	color:white;
+	cursor:pointer;
+	font-weight:bold;
+	font-size:11pt;
+	padding:1em;
+}
+.center {
+	display:block;
+	margin:auto;
+}
+.col {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+.c2  {width:16.66%;}
+.c4  {width:33.33%;}
+.c6  {width:50%;}
+.c8  {width:66.66%;}
+.c10 {width:83.33%;}
+.c12 {width:100%;}
+.borderimg {
+	border:1em solid white;
+	margin:1em auto;
+}
+/* ------------------------------ MEDIA QUERIES ------------------------------ */
+@media screen and (max-width:1700px) {#headerlogo {height:2em;}}
+@media screen and (max-width:1400px) {
+	#headerimg,main {width:90%;}
+	#headerimg {background-position: 50% 14%;}
+}
+@media screen and (max-width:1000px) {
+	#lilogo {display:none;}
+	#headerlogom {
+		display:block;
+		margin:0 auto 1em auto;
+		height:3em;
+		position:relative;
+		top:.5em;
+	}
+	nav li {
+		display:inline-block;
+		margin:.5em auto;
+		width:50%;
+	}
+	nav li a {width:100%;}
+	.newsbox {
+		height:40vw;
+		width:40vw;
+	}
+}
+@media screen and (max-width:600px) {
+	.newsbox {
+		height:70vw;
+		margin:1em auto;
+		width:70vw;
+	}
+}

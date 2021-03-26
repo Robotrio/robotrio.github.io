@@ -3,30 +3,75 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Page Title</title>
-<style> 
-
-</style>
-<link rel="stylesheet" type="text/css" href="main.css"/>
-<link rel="icon" type="image/png" href=" "/>
-<script src=" "></script>
+<title>Robotrio</title>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="icon" type="image/png" href="images/favicon.png"/>
+<script src="js/hf_script.js"></script>
 </head>
-<body>
+<body onload="load()">
 
 <header>
-<nav>
-<!--<ul>
-<li><a href="">  </a></li>
-</ul>-->
-</nav>
+	<!--<nav>
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="chara.html">CHARACTERS</a></li>
+			<li><h1><a href="index.html"><img src="images/rs1l.png" alt="Robotrio logo"/></a></h1></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="media.html">MEDIA</a></li>
+		</ul>
+		<hr/>
+	</nav>
+	-->
+NOTE: This site uses JavaScript. If you cannot see the content, please enable scripts for our site.
 </header>
+<div id="wrapper">
+<div id="headerimg"><a class="divlink" href="blog/2.html"></a></div>
 
-Placeholder
+<main>
 
+<h2>News</h2>
+<hr/>
 
-<footer>
+<div id="blog">
+<!--
+<div class="newsbox">
+	<div class="newstitle">
+			Meet Castilles, a nervous but eager bot, and his caretaker Adelpha in this Robotrio character video.
+	</div>
+	<a href="blog/1.html">
+		<img class="newsbg" src="images/blog/C2S4A.webp" alt="Castilles in unfamiliar territory"/>
+	</a>
+</div>
 
-</footer>
+<div class="newsbox">
+	<div class="newstitle">
+			Ace is on the case, and he's not alone! The Robotrio character video for Ace McNacho and DANT-1C is out!
+	</div>
+	<a href="blog/1.html">
+		<img class="newsbg" src="images/blog/C1S2D.webp" alt="Ace McNacho, P.D.B. in his signature hat and cloak"/>
+	</a>
+</div>
+-->
+</div>
+
+</main>
+</div>
+<footer><!--Copyright &copy; 2021 Timeless Hero Productions.--></footer>
+
+<script>
+	let info = [
+		["Ace is on the case, and he's not alone! The Robotrio character video for Ace McNacho and DANT-1C is out!","C1S2D.webp","Ace McNacho, P.D.B. in his signature hat and cloak"],
+		["Meet Castilles, a nervous but eager bot, and his caretaker Adelpha in this Robotrio character video.","C2S4A.webp","Castilles in unfamiliar territory"],
+		["The release date for Season 1 is now revealed!","MSCposter.webp","Series logo and all three robots"]
+	];
+	let post;
+	let news = [];
+	for (let i=0;i<info.length;i++) {
+		post = '<div class="newsbox"><div class="newstitle">'+info[i][0]+'</div><a href="blog/'+i+'.html"><img class="newsbg" src="images/blog/'+info[i][1]+'"alt='+info[i][2]+'/></a></div>';
+		news.unshift(post);
+	}
+	for (let i=0;i<news.length;i++) {document.getElementById('blog').innerHTML += news[i];}
+</script>
 
 </body>
 </html>
