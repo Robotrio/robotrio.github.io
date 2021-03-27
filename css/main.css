@@ -91,9 +91,7 @@ main {
 	margin:2em 0;
 	padding:1em 2.5em;
 }
-p {
-	line-height:1.25em;
-}
+p {line-height:1.25em;}
 #blog {
 	display:flex;
 	flex-wrap:wrap;
@@ -143,9 +141,7 @@ iframe {
 	margin:0 auto .5em auto;
 	text-align:center;
 }
-.referencelink {
-	text-decoration:none;
-}
+.referencelink {text-decoration:none;}
 /* ------------------------------ MISCELLANEOUS ------------------------------ */
 a {color:white;}
 button {
@@ -182,8 +178,14 @@ button {
 @media screen and (max-width:1400px) {
 	#headerimg,main {width:90%;}
 	#headerimg {background-position: 50% 14%;}
+	iframe {
+		width:70vw;
+		height:39.375vw;
+	}
 }
 @media screen and (max-width:1000px) {
+	.col, .col img.c2 {display:block;}
+	.col img.c2 {margin:auto;}
 	#lilogo {display:none;}
 	#headerlogom {
 		display:block;
@@ -202,6 +204,9 @@ button {
 		height:40vw;
 		width:40vw;
 	}
+}
+@media screen and (max-width:700px) {
+	.col img.c2 {width:30vw;}
 }
 @media screen and (max-width:600px) {
 	.newsbox {
