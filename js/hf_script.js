@@ -1,5 +1,13 @@
 let footertext = 'Copyright &copy; 2021 Timeless Hero Productions.';
 
+let info = [
+	["Ace is on the case, and he's not alone! The Robotrio character video for Ace McNacho and DANT-1C is out!","C1S2D.webp","Ace in his signature hat and cloak"],
+	["Meet Castilles, a nervous but eager bot, and his caretaker Adelpha in this Robotrio character video.","C2S4A.webp","Castilles in a dark alley"],
+	["The release date for Season 1 is now revealed!","MSCposter.webp","Series logo and all three robots"],
+	["Heracles Engineering Robotics Showcase: DANT-1C","C4DA.webp","DANT-1C near a waterfall"]
+];
+
+
 function load() {
 	let header = '<a href="index.html"><img id="headerlogom" src="images/rs1l.webp" alt="Robotrio logo"/></a>';
 	header += '<nav><ul>';
@@ -28,10 +36,14 @@ function loadb() {
 	let goBack = '<a href="../index.html"><img alt="Back to Home" style="width:3em;height:3em;margin-top:1em;" src="../images/arrow.svg"/>';
 	if (document.body.contains(document.getElementById('backArrow'))) {document.getElementById('backArrow').innerHTML = goBack;}
 	if (document.body.contains(document.getElementById('iframes'))) {
-			let ytCode = document.getElementById('iframes').dataset.ytid;
-			let spCode = document.getElementById('iframes').dataset.spid;
-			let yt = '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+ytCode+'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-			let sp = '<iframe src="https://open.spotify.com/embed-podcast/episode/'+spCode+'" style="height:232px;" allowtransparency="true" allow="encrypted-media"></iframe>';
+			let ytCode, spCode, yt, sp;
+			ytCode = document.getElementById('iframes').dataset.ytid;
+			spCode = document.getElementById('iframes').dataset.spid;
+			yt = '<iframe width="560" height="315" src="https://www.youtube.com/embed/'+ytCode+'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+			if (spCode !== 'none') {
+				sp = '<iframe src="https://open.spotify.com/embed-podcast/episode/'+spCode+'" style="height:232px;" allowtransparency="true" allow="encrypted-media"></iframe>';
+			}
+			else {sp = ''};
 			document.getElementById('iframes').innerHTML = yt + sp;
 	}
 }
