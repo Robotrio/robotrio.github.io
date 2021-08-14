@@ -4,7 +4,8 @@ let info = [
 	["Ace is on the case, and he's not alone! The Robotrio character video for Ace McNacho and DANT-1C is out!","C1S2D.webp","Ace in his signature hat and cloak"],
 	["Meet Castilles, a nervous but eager bot, and his caretaker Adelpha in this Robotrio character video.","C2S4A.webp","Castilles in a dark alley"],
 	["The release date for Season 1 is now revealed!","MSCposter.webp","Series logo and all three robots"],
-	["Heracles Engineering Robotics Showcase: DANT-1C","C4DA.webp","DANT-1C near a waterfall"]
+	["Heracles Engineering Robotics Showcase: DANT-1C","C4DA.webp","DANT-1C near a waterfall"],
+	["Season 1 is now available!","",""]
 ];
 
 
@@ -35,6 +36,7 @@ function loadb() {
 	//if (document.body.contains(document.getElementById('audioLink'))) {document.getElementById('audioLink').children.innerHTML = 'Listen to the audio version here.';}
 	let goBack = '<a href="../index.html"><img alt="Back to Home" style="width:3em;height:3em;margin-top:1em;" src="../images/arrow.svg"/>';
 	if (document.body.contains(document.getElementById('backArrow'))) {document.getElementById('backArrow').innerHTML = goBack;}
+	
 	if (document.body.contains(document.getElementById('iframes'))) {
 			let ytCode, spCode, yt, sp;
 			ytCode = document.getElementById('iframes').dataset.ytid;

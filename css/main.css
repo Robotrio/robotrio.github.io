@@ -163,6 +163,17 @@ button {
 	font-size:11pt;
 	padding:1em;
 }
+select {
+	background:#055;
+	border:none;
+	border-radius:.75em;
+	color:white;
+	cursor:pointer;
+	font-size:11pt;
+	margin:0 .5em;
+	padding:1em;
+	min-width:15em;
+}
 .center {
 	display:block;
 	margin:auto;
