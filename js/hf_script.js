@@ -5,7 +5,7 @@ let info = [
 	["Meet Castilles, a nervous but eager bot, and his caretaker Adelpha in this Robotrio character video.","C2S4A.webp","Castilles in a dark alley"],
 	["The release date for Season 1 is now revealed!","MSCposter.webp","Series logo and all three robots"],
 	["Heracles Engineering Robotics Showcase: DANT-1C","C4DA.webp","DANT-1C near a waterfall"],
-	["Season 1 is now available!","",""]
+	["Season 1 is now released!","sp_cover.webp","The three robots"]
 ];
 
 
