@@ -8,8 +8,10 @@ let info = [
 	["Season 1 is now released!","sp_cover.webp","The three robots"],
 	["Season 2 begins July 2022!","6-S2Ace.webp","Ace close-up"]
 ];
+		//<li><a href="cast.html">CAST</a></li><li><a href="crew.html">CREW</a></li>
 
-let header = `<a href="index.html"><img id="headerlogom" src="images/rs1l.webp" alt="Robotrio logo"/></a>
+function load() {
+	let header = `<a href="index.html"><img id="headerlogom" src="images/rs1l.webp" alt="Robotrio logo"/></a>
 		<nav><ul>
 			<li><a href="index.html">HOME</a></li>
 			<li><a href="about.html">ABOUT</a></li>
@@ -21,14 +23,23 @@ let header = `<a href="index.html"><img id="headerlogom" src="images/rs1l.webp" 
 			<li><a href="characters.html">CHARACTERS</a></li>
 			<li><a href="media.html">MEDIA</a></li>
 		</ul><hr/></nav>`;
-		//<li><a href="cast.html">CAST</a></li><li><a href="crew.html">CREW</a></li>
-
-function load() {
 	document.querySelector('header').innerHTML = header;
 	document.querySelector('footer').innerHTML = footertext;
 }
 
 function loadb() {
+	let header = `<a href="../../index.html"><img id="headerlogom" src="images/rs1l.webp" alt="Robotrio logo"/></a>
+		<nav><ul>
+			<li><a href="../../index.html">HOME</a></li>
+			<li><a href="../../about.html">ABOUT</a></li>
+			<li id="lilogo">
+				<h1><a href="../../index.html">
+					<img id="headerlogo" src="../../images/rs1l.webp" alt="Robotrio logo"/>
+				</a></h1>
+			</li>
+			<li><a href="../../characters.html">CHARACTERS</a></li>
+			<li><a href="../../media.html">MEDIA</a></li>
+		</ul><hr/></nav>`;
 	document.querySelector('header').innerHTML = header;
 	document.querySelector('footer').innerHTML = footertext;
 	//if (document.body.contains(document.getElementById('audioLink'))) {document.getElementById('audioLink').children.innerHTML = 'Listen to the audio version here.';}
