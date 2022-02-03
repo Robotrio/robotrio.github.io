@@ -23,35 +23,37 @@
 	</p>
 	Choose an episode here: 
 	<select onchange="chooseEp()" id="epSelect">
-		<option value="POPP7Fol30k">
+		<option value="POPP7Fol30k" data-spid="5kF3D8Yk6mkRIp3PJmNHXh" data-desc="After a short visit from a friend, the racing robot Castilles gets into more trouble than he bargained for.">
 			Episode 1
 		</option>
-		<option value="wnCqXbPKe_8">
+		<option value="wnCqXbPKe_8" data-spid="0k4NnZkkwNJUZSORMVqlWU" data-desc="As Dant prepares for his panel, we get a special glimpse of how the bots get ready for the day - and a look at Ace’s secret hobby.">
 			Episode 2
 		</option>
-		<option value="LzIuMTKjxDY">
+		<option value="LzIuMTKjxDY" data-spid="513RYcE3U0kzs7wxpWQ7bT" data-desc="Ace has always had a hard time expressing emotion, but the most serious issue is that he can’t feel or express sadness. This is delved into when he receives some unfortunate news regarding his co-creator.">
 			Episode 3
 		</option>
-		<option value="Mdy5QpRcEIo">
+		<option value="Mdy5QpRcEIo" data-spid="4ZTZKZ9W3om5sFMuiTqqjT" data-desc="The mystery deepens as Castilles attempts to parse through two aspects: the moments of his past, and his strangely illogical feelings of the present.">
 			Episode 4
 		</option>
-		<option value="UAh1vgaYIx4">
+		<option value="UAh1vgaYIx4" data-spid="6mFUXvYFLBLTP487fGQqc4" data-desc="Ace and Castilles team up on a wild, noir-homage-filled stakeout, hunting for clues to find out who Deck is, and what he is hiding.">
 			Episode 5
 		</option>
-		<option value="Q5LuJFw0i0w">
+		<option value="Q5LuJFw0i0w" data-spid="3CA86I9bA2XYDP8MqhOPcQ" data-desc="After discovering evidence that changes everything Castilles knew about himself, he confronts Adelpha to make her tell the full truth.">
 			Episode 6
 		</option>
-		<option value="o1CXDFgFbAw">
+		<option value="o1CXDFgFbAw" data-spid="38e11gHT50Bb0ZPke2dI1r" data-desc="!WARNING! This episode contains graphic depictions of torture and screaming, and is unsuitable for young listeners. </p><p> Castilles finally meets his creator. It isn’t a happy reunion.">
 			Episode 7 (age-restricted)
 		</option>
-		<option value="Cf9I2tNK6OY">
+		<option value="Cf9I2tNK6OY" data-spid="6AEBxUGpMEFe6RZt1cmygT" data-desc="Ace, Dant and Adelpha make an unlikely ally as they try to rescue their friend.">
 			Episode 8
 		</option>
 	</select>
+	<br/><br/>
+	<p id="desc"></p>
 	<iframe id="season" width="560" height="315" src="https://www.youtube.com/embed/POa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe id="spSeason" src="https://open.spotify.com/embed-podcast/episode/" style="height:232px;" allowtransparency="true" allow="encrypted-media"></iframe>
 	<!--
 	<div id="iframes" data-ytid="POPP7Fol30k" data-spid="4ZgFGt7XsHxYdH0B7NXiOO"></div>
-	
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/y7TiPCO8mLw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<p id="audioLink">
 		<a target="_blank" href="https://open.spotify.com/episode/4ZgFGt7XsHxYdH0B7NXiOO">
@@ -70,10 +72,14 @@
 
 </body>
 
-
 <script>
 	function chooseEp() {
-		document.getElementById("season").src = "https://www.youtube.com/embed/" + document.getElementById("epSelect").value;
+		const epSelect = document.getElementById("epSelect");
+		const epIndex = epSelect.options[epSelect.selectedIndex].dataset;
+		document.getElementById("season").src = "https://www.youtube.com/embed/" + epSelect.value;
+		document.getElementById("spSeason").src = "https://open.spotify.com/embed-podcast/episode/" + epIndex.spid;
+		document.getElementById("desc").innerHTML = epIndex.desc;
+		
 	}
 </script>
 </html>
