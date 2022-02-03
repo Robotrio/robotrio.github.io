@@ -1,7 +1,7 @@
 let footertext = 'Copyright &copy; 2021-2022 Timeless Hero Productions.';
 
-function setInfo() {
-	let info = [
+async function setInfo() {
+	return [
 	["Ace is on the case, and he's not alone! The Robotrio character video for Ace McNacho and DANT-1C is out!","0S2D.webp","Ace in his signature hat and cloak"],
 	["Meet Castilles, a nervous but eager bot, and his caretaker Adelpha in this Robotrio character video.","1S4A.webp","Castilles in a dark alley"],
 	["The release date for Season 1 is now revealed!","MSCposter.webp","Series logo and all three robots"],
@@ -13,7 +13,7 @@ function setInfo() {
 		//<li><a href="cast.html">CAST</a></li><li><a href="crew.html">CREW</a></li>
 
 function load() {
-	setInfo();
+	const info = await setInfo();
 	let header = `<a href="index.html"><img id="headerlogom" src="images/rs1l.webp" alt="Robotrio logo"/></a>
 		<nav><ul>
 			<li><a href="index.html">HOME</a></li>
