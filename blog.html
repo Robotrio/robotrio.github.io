@@ -7,8 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
 	<link rel="icon" type="image/png" href="images/favicon.png"/>
 	<script src="js/hf_script.js" async></script>
+	<script src="js/blog.js"></script>
 </head>
-<body onload="load()">
+<body onload="blogLoad()">
 
 <header>
 	<!--<nav>
@@ -50,10 +51,10 @@ NOTE: This site uses JavaScript. If you cannot see the content, please enable sc
 </div>
 <footer><!--Copyright &copy; 2021 Timeless Hero Productions.--></footer>
 
-<script async>
+<!--<script async>
 	let post;
 	let news = [];
-	for (let i=(info.length-1);i>=0;i--) {
+	for (let i = (info.length-1); i >= 0; i--) {
 		post = `<div class="newsbox">
 			<div class="newstitle">`+info[i][0]+`</div>
 			<a href="blog/`+i+`/">
@@ -64,7 +65,7 @@ NOTE: This site uses JavaScript. If you cannot see the content, please enable sc
 		news.unshift(post);
 	}
 	for (let i=(news.length-1);i>=0;i--) {document.getElementById('blog').innerHTML += news[i];}
-</script>
+</script>-->
 
 </body>
 </html>
