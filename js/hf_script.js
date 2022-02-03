@@ -17,7 +17,7 @@ function load() {
 			<li><a href="about.html">ABOUT</a></li>
 			<li id="lilogo">
 				<h1><a href="index.html">
-					<img id="headerlogo" src="images/rs1l.webp" alt="Robotrio logo"/>
+					<img id="headerlogo" src="images/logo_s2.webp" alt="Robotrio logo"/>
 				</a></h1>
 			</li>
 			<li><a href="characters.html">CHARACTERS</a></li>
@@ -34,7 +34,7 @@ function loadb() {
 			<li><a href="../../about.html">ABOUT</a></li>
 			<li id="lilogo">
 				<h1><a href="../../index.html">
-					<img id="headerlogo" src="../../images/rs1l.webp" alt="Robotrio logo"/>
+					<img id="headerlogo" src="../../images/logo_s2.webp" alt="Robotrio logo"/>
 				</a></h1>
 			</li>
 			<li><a href="../../characters.html">CHARACTERS</a></li>
