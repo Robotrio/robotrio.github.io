@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Robotrio</title>
-<link rel="stylesheet" type="text/css" href="css/main.css"/>
-<link rel="icon" type="image/png" href="images/favicon.png"/>
-<script src="js/hf_script.js"></script>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>Robotrio</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="icon" type="image/png" href="images/favicon.png"/>
+	<script src="js/hf_script.js" async></script>
 </head>
 <body onload="load()">
 
@@ -25,7 +25,7 @@
 NOTE: This site uses JavaScript. If you cannot see the content, please enable scripts for our site.
 </header>
 <div id="wrapper">
-<div id="headerimg"><a class="divlink" href="blog/2.html"></a></div>
+<div id="headerimg"><a class="divlink" href="blog/5.html"></a></div>
 
 <main>
 
@@ -65,7 +65,12 @@ NOTE: This site uses JavaScript. If you cannot see the content, please enable sc
 	let post;
 	let news = [];
 	for (let i=(info.length-1);i>(info.length-4);i--) {
-		post = '<div class="newsbox"><div class="newstitle">'+info[i][0]+'</div><a href="blog/'+i+'.html"><img class="newsbg" src="images/blog/'+info[i][1]+'"alt='+info[i][2]+'/></a></div>';
+		post = `<div class="newsbox">
+			<div class="newstitle">`+info[i][0]+`</div>
+			<a href="blog/`+i+`/">
+				<img class="newsbg" src="blog/`+i+`/`+info[i][1]+`"alt=`+info[i][2]+`/>
+			</a>
+		</div>`;
 		news.unshift(post);
 	}
 	for (let i=(news.length-1);i>=0;i--) {document.getElementById('blog').innerHTML += news[i];}

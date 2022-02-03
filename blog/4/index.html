@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>Season 1 Released! | Robotrio</title>
+	<link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+	<link rel="icon" type="image/png" href="../../images/favicon.png"/>
+	<script src="../../js/hf_script.js" async></script>
+</head>
+<body onload="loadb(); chooseEp();">
+<div id="wrapper">
+
+<header></header>
+
+<main>
+<section class="bg">
+	<span id="backArrow"></span>
+	<h2>Season 1 is fully available!</h2>
+	<hr/>
+	<p id="description">
+		The first Robotrio season is officially released on YouTube! In the year 2011, three robots get into more adventures than they bargained for. 
+	</p>
+	Choose an episode here: 
+	<select onchange="chooseEp()" id="epSelect">
+		<option value="POPP7Fol30k">
+			Episode 1
+		</option>
+		<option value="wnCqXbPKe_8">
+			Episode 2
+		</option>
+		<option value="LzIuMTKjxDY">
+			Episode 3
+		</option>
+		<option value="Mdy5QpRcEIo">
+			Episode 4
+		</option>
+		<option value="UAh1vgaYIx4">
+			Episode 5
+		</option>
+		<option value="Q5LuJFw0i0w">
+			Episode 6
+		</option>
+		<option value="o1CXDFgFbAw">
+			Episode 7 (age-restricted)
+		</option>
+		<option value="Cf9I2tNK6OY">
+			Episode 8
+		</option>
+	</select>
+	<iframe id="season" width="560" height="315" src="https://www.youtube.com/embed/POa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<!--
+	<div id="iframes" data-ytid="POPP7Fol30k" data-spid="4ZgFGt7XsHxYdH0B7NXiOO"></div>
+	
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/y7TiPCO8mLw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<p id="audioLink">
+		<a target="_blank" href="https://open.spotify.com/episode/4ZgFGt7XsHxYdH0B7NXiOO">
+			Listen to the audio version here
+		</a>
+	</p>
+	<iframe src="https://open.spotify.com/embed-podcast/episode/4ZgFGt7XsHxYdH0B7NXiOO" style="height:232px;" allowtransparency="true" allow="encrypted-media"></iframe>
+	-->
+</section>
+
+</main>
+</div>
+
+<footer></footer>
+
+
+</body>
+
+
+<script>
+	function chooseEp() {
+		document.getElementById("season").src = "https://www.youtube.com/embed/" + document.getElementById("epSelect").value;
+	}
+</script>
+</html>
