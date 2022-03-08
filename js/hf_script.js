@@ -6,7 +6,8 @@ let info = [
 	["The release date for Season 1 is now revealed!","MSCposter.webp","Series logo and all three robots"],
 	["Heracles Engineering Robotics Showcase: DANT-1C","3DA.webp","DANT-1C near a waterfall"],
 	["Season 1 is now released!","sp_cover.webp","The three robots"],
-	["Season 2 begins July 2022!","6-S2Ace.webp","Ace close-up"]
+	["Season 2 begins July 2022!","6-S2Ace.webp","Ace close-up"],
+	["Season 2 Teaser #1","6-AceDant.webp","A concerned Dant looks at Ace."]
 ];
 	//<li><a href="cast.html">CAST</a></li><li><a href="crew.html">CREW</a></li>
 
