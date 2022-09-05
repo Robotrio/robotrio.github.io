@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>Season 1 Released! | Robotrio</title>
+	<link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+	<link rel="icon" type="image/png" href="../../images/favicon.png"/>
+	<script src="../../js/hf_script.js" async></script>
+</head>
+<body onload="loadb(); chooseEp();">
+<div id="wrapper">
+
+<header></header>
+
+<main>
+<section class="bg">
+	<span id="backArrow"></span>
+	<h2>Season 2 is fully available!</h2>
+	<hr/>
+	<p id="description">
+		The second Robotrio season is up on YouTube and Spotify! After the events of the first season, Ace is determined to find Hector, but the scientist has his own plans for the trio&hellip;
+	</p>
+	Choose an episode here: 
+	<select onchange="chooseEp()" id="epSelect">
+		<option value="bkUH2-Yakxg" data-spid="11UELUB9MwzOZNG7igWkrI?si=pJMEnGthQXCOv4n3w72Odw" data-desc="Today is the 2nd anniversary of Ace’s creation, and people celebrate accordingly. Meanwhile, Cast works through his relationships with the others - even if it means hiding his true feelings.">
+			Episode 1
+		</option>
+		<option value="X1FUtSYdoSU" data-spid="7lHsz5z198kybdDV50hdw8?si=gP88JuLlTPaslKZ50LdJpg" data-desc="For various reasons, Ace takes Dant out for a drink, where they meet some old friends… and new enemies.">
+			Episode 2
+		</option>
+		<option value="YduH8YJTe7I" data-spid="00Gdn4PWw8UEUSuYrs2qmO?si=SOKpJLY8TySJagWpk8CNhQ" data-desc="The bots attempt to parse through data relating to Hector, but there’s a spy among the group, and a pair of his minions chasing after them.">
+			Episode 3
+		</option>
+		<option value="zHvQqmoUy8Q" data-spid="2dJgygibsdisc76UMJiUmV?si=X0MB-gC2RWi-yZ9ivp2wrA" data-desc="The trio takes a breather in the park as Dant learns to throw a boomerang.">
+			Episode 4
+		</option>
+		<option value="6VxhnRZoHYo" data-spid="6ctDor0ggt3xWdL5F0CC5q?si=LW3MS7L6RdyDJ-XE6DtxFQ" data-desc="Ace falls deeper into Elsi’s trap as he struggles to solve another murder mystery.">
+			Episode 5
+		</option>
+		<option value="LEQ0v4O2-w0" data-spid="0LpbGR1SD3E0BWQ5UJroSg?si=nFtJE_orQ4GDidmW-x1WpA" data-desc="WARNING: This episode contains serious mental trauma and potentially triggering topics. Viewer discretion is advised. </p><p> Tension rises with the stakes as Ace grows further from his friends.">
+			Episode 6
+		</option>
+		<option value="2x_Zp6_fsbI" data-spid="7bZhb8GP53gMMgnmMhwkRS?si=Bewa4KArSxWp_ZYcCIvU-g" data-desc="Twisted and corrupted by Elsi’s influence, Ace struggles to discover Hector’s whereabouts in a solo case.">
+			Episode 7
+		</option>
+		<option value="94LJ7pjCJQg" data-spid="4Y8ipLQrrfStlFqkqPEDlQ?si=kK9l78-WTqiqR6fbrHRqKQ" data-desc="Despite everything, Cast takes one last chance to rescue Ace.">
+			Episode 8
+		</option>
+	</select>
+	<br/><br/>
+	<p id="desc"></p>
+	<iframe id="season" width="560" height="315" src="https://www.youtube.com/embed/POa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe id="spSeason" src="https://open.spotify.com/embed-podcast/episode/" style="height:232px;" allowtransparency="true" allow="encrypted-media"></iframe>
+	<!--
+	<div id="iframes" data-ytid="POPP7Fol30k" data-spid="4ZgFGt7XsHxYdH0B7NXiOO"></div>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/y7TiPCO8mLw" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<p id="audioLink">
+		<a target="_blank" href="https://open.spotify.com/episode/4ZgFGt7XsHxYdH0B7NXiOO">
+			Listen to the audio version here
+		</a>
+	</p>
+	<iframe src="https://open.spotify.com/embed-podcast/episode/4ZgFGt7XsHxYdH0B7NXiOO" style="height:232px;" allowtransparency="true" allow="encrypted-media"></iframe>
+	-->
+</section>
+
+</main>
+</div>
+
+<footer></footer>
+
+
+</body>
+
+<script>
+	function chooseEp() {
+		const epSelect = document.getElementById("epSelect");
+		const epIndex = epSelect.options[epSelect.selectedIndex].dataset;
+		document.getElementById("season").src = "https://www.youtube.com/embed/" + epSelect.value;
+		document.getElementById("spSeason").src = "https://open.spotify.com/embed-podcast/episode/" + epIndex.spid;
+		document.getElementById("desc").innerHTML = epIndex.desc;
+		
+	}
+</script>
+</html>
