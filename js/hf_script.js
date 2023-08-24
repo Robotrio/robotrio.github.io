@@ -8,7 +8,8 @@ let info = [
 	["Season 1 is now released!","sp_cover.webp","The three robots"],
 	["Season 2 begins July 2022!","6-S2Ace.webp","Ace close-up"],
 	["Season 2 Teaser #1","6-AceDant.webp","A concerned Dant looks at Ace."],
-	["Season 2 now on YouTube and Spotify!","7_s2_cover.webp","Ace takes a walk outdoors, deep in thought."]
+	["Season 2 now on YouTube and Spotify!","7_s2_cover.webp","Ace takes a walk outdoors, deep in thought."],
+	["Robotio World Primer 810NICLE Day Release","2308D.webp","The BIONICLE Day Logo, accompanied by Cast and an original character from a second RSG-related member."]
 ];
 	//<li><a href="cast.html">CAST</a></li><li><a href="crew.html">CREW</a></li>
 
