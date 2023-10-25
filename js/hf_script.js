@@ -14,13 +14,13 @@ let info = [
 	//<li><a href="cast.html">CAST</a></li><li><a href="crew.html">CREW</a></li>
 
 function load() {
-	let header = `<a href="index.html"><img id="headerlogom" src="images/rs1l.webp" alt="Robotrio logo"/></a>
+	let header = `<a href="index.html"><img id="headerlogom" src="images/logo_s3.webp" alt="Robotrio logo"/></a>
 		<nav><ul>
 			<li><a href="index.html">HOME</a></li>
 			<li><a href="about.html">ABOUT</a></li>
 			<li id="lilogo">
 				<h1><a href="index.html">
-					<img id="headerlogo" src="images/logo_s2.webp" alt="Robotrio logo"/>
+					<img id="headerlogo" src="images/logo_s3.webp" alt="Robotrio logo"/>
 				</a></h1>
 			</li>
 			<li><a href="characters.html">CHARACTERS</a></li>
@@ -31,13 +31,13 @@ function load() {
 }
 
 function loadb() {
-	let header = `<a href="../../index.html"><img id="headerlogom" src="images/rs1l.webp" alt="Robotrio logo"/></a>
+	let header = `<a href="../../index.html"><img id="headerlogom" src="images/logo_s3.webp" alt="Robotrio logo"/></a>
 		<nav><ul>
 			<li><a href="../../index.html">HOME</a></li>
 			<li><a href="../../about.html">ABOUT</a></li>
 			<li id="lilogo">
 				<h1><a href="../../index.html">
-					<img id="headerlogo" src="../../images/logo_s2.webp" alt="Robotrio logo"/>
+					<img id="headerlogo" src="../../images/logo_s3.webp" alt="Robotrio logo"/>
 				</a></h1>
 			</li>
 			<li><a href="../../characters.html">CHARACTERS</a></li>
